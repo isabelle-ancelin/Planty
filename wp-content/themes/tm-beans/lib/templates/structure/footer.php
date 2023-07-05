@@ -24,3 +24,4 @@
 	beans_close_markup_e( 'beans_body', 'body' );
 
 beans_close_markup_e( 'beans_html', 'html' );
+

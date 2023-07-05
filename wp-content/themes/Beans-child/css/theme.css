@@ -1,4 +1,5 @@
 @import url('href="https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
 /* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
     font-family: 'Syne', sans-serif;
@@ -6,18 +7,17 @@ body * {
 
 
 /** Header **/
-body > div.tm-site > main {
+
+body>div.tm-site>main {
     padding-top: 0;
     margin-top: 0;
 }
-body > div.tm-site > header
-{
+
+body>div.tm-site>header {
     padding: 0;
-    
 }
 
-body > div.tm-site > header > div 
-{
+body>div.tm-site>header>div {
     max-width: 100%;
     height: 80px;
     display: flex;
@@ -27,14 +27,12 @@ body > div.tm-site > header > div
     padding-left: auto;
 }
 
-
-body > div.tm-site > header > div > div
-{
+body>div.tm-site>header>div>div {
     display: flex;
     align-items: center;
 }
-body > div.tm-site > header > div > div > a
-{
+
+body>div.tm-site>header>div>div>a {
     margin-right: 10px;
 }
 
@@ -42,72 +40,67 @@ div.uk-container.uk-container-center::before,
 div.uk-container.uk-container-center::after {
     content: none !important;
 }
+
 header.tm-header.uk-block::before,
 header.tm-header.uk-block::after {
     content: none !important;
 }
 
-#menu-main-menu > li > a
-
-{
+#menu-main-menu>li>a {
     display: flex;
     align-items: center;
-    height:80px ;
+    height: 80px;
     background-color: white;
     font-size: 16px;
     font-weight: 700;
-    
+    padding-right: 70px;
 }
 
-
-#menu-main-menu > li.command > a
-{
-    background-color:#dc9f96;
+#menu-main-menu>li.command>a {
+    background-color: #dc9f96;
     color: white;
     width: 236px;
-    padding:0 70px;
-       
+    padding-left: 70px;
+
 }
 
 /**Formulaire 1**/
-#wpcf7-f155-p26-o1 
-{
+
+#wpcf7-f155-p26-o1 {
     display: flex;
     justify-content: center;
 }
 
-#wpcf7-f155-p26-o1 label
-{
+#wpcf7-f155-p26-o1 label {
     font-size: 20px;
-    line-height: 24px; 
+    line-height: 24px;
     padding-bottom: 5px;
 }
 
-#wpcf7-f155-p26-o1 > form > p:nth-child(2) > label > span > input
-{
+#wpcf7-f155-p26-o1>form>p:nth-child(2)>label>span>input {
     height: 71px;
     width: 383px;
     border-radius: 7px;
 }
-#wpcf7-f155-p26-o1 > form > p:nth-child(3) > label > span > input
-{
+
+#wpcf7-f155-p26-o1>form>p:nth-child(3)>label>span>input {
     height: 71px;
     width: 383px;
     border-radius: 7px;
 }
-#wpcf7-f155-p26-o1 > form > p:nth-child(4) > label > span > textarea
-{
+
+#wpcf7-f155-p26-o1>form>p:nth-child(4)>label>span>textarea {
     height: 237px;
     width: 383px;
     border-radius: 7px;
     resize: none;
 }
-#wpcf7-f155-p26-o1 > form > p:nth-child(5)
-{
+
+#wpcf7-f155-p26-o1>form>p:nth-child(5) {
     text-align: center;
 }
-#wpcf7-f155-p26-o1 > form > p:nth-child(5) > input
-{
+
+#wpcf7-f155-p26-o1>form>p:nth-child(5)>input {
     width: 198px;
     height: 55px;
     border-radius: 5px;
@@ -115,9 +108,9 @@ header.tm-header.uk-block::after {
     color: white;
     border: none;
 }
-#wpcf7-f155-p26-o1 > form > p:nth-child(5) > input:hover
-{
-    background-color:#c02e44;
+
+#wpcf7-f155-p26-o1>form>p:nth-child(5)>input:hover {
+    background-color: #c02e44;
 }
 
 .wpcf7-spinner {
@@ -125,51 +118,49 @@ header.tm-header.uk-block::after {
 }
 
 /** formulaire 2**/
-#wpcf7-f393-p28-o1 > form
-{
+
+#wpcf7-f393-p28-o1>form {
     color: white;
-   
 }
-    /**compteurs **/
-#wpcf7-f393-p28-o1 > form > p
-{
+
+/**compteurs **/
+
+#wpcf7-f393-p28-o1>form>p {
     display: flex;
     justify-content: space-between;
     height: 19px;
     max-width: 900px;
     margin-right: 110px;
     margin-left: auto;
-    
 }
 
 /**essai input **/
-#wpcf7-f393-p28-o1 > form > p > span > input
-{
+
+#wpcf7-f393-p28-o1>form>p>span>input {
     width: 81px;
     height: 56px;
     background-color: #e0b9b4;
-    margin-top:-20px;
+    margin-top: -20px;
     margin-left: 20px;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
 /**/
-#wpcf7-f393-p28-o1 > form > p > input
-{
+
+#wpcf7-f393-p28-o1>form>p>input {
     width: 100px;
     height: 56px;
     border-radius: 5px;
     background-color: #e0b9b4;
     color: white;
     border: none;
-    margin-top:-20px;
+    margin-top: -20px;
     margin-right: 20px;
-    
 }
 
-    /** informations & livraisons**/
-.form2
-{
+/** informations & livraisons**/
+
+.form2 {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
@@ -178,40 +169,34 @@ header.tm-header.uk-block::after {
     border-top: 1px solid white;
     margin-top: 50px;
     padding-top: 50px;
-    
-
 }
-.info 
-{
+
+.info {
     border-right: 1px solid white;
     padding-right: 70px;
 }
-.info > p:nth-child(1)
-{
-   font-size: 30px;
-   font-weight: 700;
-   line-height: 36px; 
-  
-}
 
-
-.delivery > p:nth-child(1)
-{
+.info>p:nth-child(1) {
     font-size: 30px;
     font-weight: 700;
-    line-height: 36px; 
-   
+    line-height: 36px;
 }
-#wpcf7-f393-p28-o1 > form > div.form2 > div.info > p > label > span > input
-{
+
+.delivery>p:nth-child(1) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+
+}
+
+#wpcf7-f393-p28-o1>form>div.form2>div.info>p>label>span>input {
     margin-top: 5px;
     height: 71px;
     width: 383px;
     border-radius: 7px;
 }
 
-#wpcf7-f393-p28-o1 > form > div.form2 > div.delivery > p > label > span > input
-{
+#wpcf7-f393-p28-o1>form>div.form2>div.delivery>p>label>span>input {
     margin-top: 5px;
     height: 71px;
     width: 383px;
@@ -220,19 +205,41 @@ header.tm-header.uk-block::after {
 
 /**bouton**/
 
-#wpcf7-f393-p28-o1 > form > p:nth-child(4) >input
-{
+#wpcf7-f393-p28-o1>form>p:nth-child(4)>input {
     width: 198px;
     height: 55px;
     border-radius: 5px;
     text-align: center;
-    
+
 }
-#wpcf7-f393-p28-o1 > form > p:nth-child(4)
-{
+
+#wpcf7-f393-p28-o1>form>p:nth-child(4) {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 100px;
+}
+
+/**footer**/
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    height: 60px;
+    width: 100%;
+
+}
+
+footer a {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: black;
 }

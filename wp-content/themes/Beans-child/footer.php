@@ -11,4 +11,13 @@
  * @package Beans\Framework
  */
 
-beans_load_default_template( __FILE__ );
+?>
+
+<footer id="site-footer" class="header-footer-group">
+<a href="http://localhost:81/planty/mentions-legales/">Mentions Légales</a>
+</footer><!-- #site-footer -->
+
+<?php wp_footer(); ?>
+
+</body>
+</html>
