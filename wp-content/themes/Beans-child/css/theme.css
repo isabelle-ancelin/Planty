@@ -1,9 +1,11 @@
 @import url('href="https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
-/* Import de la font Roboto depuis Google Fonts et on l'applique sur tous les éléments de la page */
+/* Import de la font syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
     font-family: 'Syne', sans-serif;
 }
+body > div > main
+{padding-bottom: 0;}
 
 
 /** Header **/
@@ -11,6 +13,7 @@ body * {
 body>div.tm-site>main {
     padding-top: 0;
     margin-top: 0;
+    padding-bottom: 0;
 }
 
 body>div.tm-site>header {
@@ -121,33 +124,118 @@ header.tm-header.uk-block::after {
 
 #wpcf7-f393-p28-o1>form {
     color: white;
+    
 }
 
 /**compteurs **/
-
-#wpcf7-f393-p28-o1>form>p {
+.compteurs {
     display: flex;
-    justify-content: space-between;
-    height: 19px;
-    max-width: 900px;
-    margin-right: 110px;
-    margin-left: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-/**essai input **/
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(1) > p {
+    display: flex;
+}
 
-#wpcf7-f393-p28-o1>form>p>span>input {
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(2) > p {
+    display: flex;
+}
+
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(3) > p {
+    display: flex;
+}
+
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(4) > p {
+    display: flex;
+}
+
+/* Style pour la première zone d'entrée avec les boutons de quantité */
+.quantity {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity input[type="number"] {
     width: 81px;
     height: 56px;
     background-color: #e0b9b4;
     margin-top: -20px;
-    margin-left: 20px;
-    margin-right: 5px;
+    margin-left: 5px;
+    
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    padding-left: 10px;
+    border: 1px solid #eee;
+    font-family: "Syne", sans-serif;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  .quantity-nav {
+    float: left;
+    position: relative;
+    height: 42px;
+  }
+  
+  .quantity-button {
+    position: relative;
+    cursor: pointer;
+    border-left: 1px solid #eee;
+    width: 20px;
+    top:-13px;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: 'Syne', sans-serif !important;
+    line-height: 1.7;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+
+/* Style pour les boutons de quantité */
+.quantity-button.quantity-up::before,
+.quantity-button.quantity-down::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #dc9f96;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 1;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/**/
+.quantity-button.quantity-up::before {
+  content: '+';
+  left: 0;
+}
 
-#wpcf7-f393-p28-o1>form>p>input {
+.quantity-button.quantity-down::before {
+  content: '-';
+  right: 0;
+}
+
+  /* Style pour la deuxième zone d'entrée (bouton de soumission) */
+  .submit-button {
+    text-align: center;
+  }
+  
+  .quantity input[type="submit"] {
     width: 100px;
     height: 56px;
     border-radius: 5px;
@@ -156,7 +244,13 @@ header.tm-header.uk-block::after {
     border: none;
     margin-top: -20px;
     margin-right: 20px;
-}
+  }
+  
+  .quantity input[type="submit"]:hover {
+    background-color: #c02e44;
+  }
+  
+
 
 /** informations & livraisons**/
 
@@ -203,6 +297,12 @@ header.tm-header.uk-block::after {
     border-radius: 7px;
 }
 
+.elementor-section.elementor-top-section.elementor-element.elementor-element-23b35c1.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.elementor-container.elementor-column-gap-default > div > div > div.elementor-element.elementor-element-e5c75ec.elementor-absolute.elementor-widget.elementor-widget-image
+{
+    display: block;
+    clear: both;    
+}
+
 /**bouton**/
 
 #wpcf7-f393-p28-o1>form>p:nth-child(4)>input {
@@ -210,6 +310,8 @@ header.tm-header.uk-block::after {
     height: 55px;
     border-radius: 5px;
     text-align: center;
+    background-color: #dc9f96;
+    color: white;
 
 }
 
@@ -226,8 +328,7 @@ header.tm-header.uk-block::after {
 footer {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 21px;
+    align-items: center;
     height: 60px;
     width: 100%;
 

@@ -33,3 +33,5 @@ function add_admin_menu_link($items, $args) {
 // Ajouter le filtre pour appliquer la fonction aux éléments du menu
 add_filter('wp_nav_menu_items', 'add_admin_menu_link', 10, 2);
 
+?>
+
