@@ -4,8 +4,10 @@
 body * {
     font-family: 'Syne', sans-serif;
 }
-body > div > main
-{padding-bottom: 0;}
+
+body>div>main {
+    padding-bottom: 0;
+}
 
 
 /** Header **/
@@ -27,7 +29,7 @@ body>div.tm-site>header>div {
     justify-content: space-between;
     align-items: center;
     padding-right: 0;
-    padding-left: auto;
+    padding-left: 20px;
 }
 
 body>div.tm-site>header>div>div {
@@ -124,7 +126,7 @@ header.tm-header.uk-block::after {
 
 #wpcf7-f393-p28-o1>form {
     color: white;
-    
+
 }
 
 /**compteurs **/
@@ -134,19 +136,19 @@ header.tm-header.uk-block::after {
     align-items: center;
 }
 
-#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(1) > p {
+#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(1)>p {
     display: flex;
 }
 
-#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(2) > p {
+#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(2)>p {
     display: flex;
 }
 
-#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(3) > p {
+#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(3)>p {
     display: flex;
 }
 
-#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(4) > p {
+#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(4)>p {
     display: flex;
 }
 
@@ -155,15 +157,15 @@ header.tm-header.uk-block::after {
     position: relative;
     display: flex;
     align-items: center;
-  }
-  
-  .quantity input[type="number"] {
+}
+
+.quantity input[type="number"] {
     width: 81px;
     height: 56px;
     background-color: #e0b9b4;
     margin-top: -20px;
     margin-left: 5px;
-    
+
     line-height: 1.65;
     float: left;
     display: block;
@@ -173,20 +175,20 @@ header.tm-header.uk-block::after {
     font-family: "Syne", sans-serif;
     -moz-appearance: textfield;
     appearance: textfield;
-  }
-  
-  .quantity-nav {
+}
+
+.quantity-nav {
     float: left;
     position: relative;
     height: 42px;
-  }
-  
-  .quantity-button {
+}
+
+.quantity-button {
     position: relative;
     cursor: pointer;
     border-left: 1px solid #eee;
     width: 20px;
-    top:-13px;
+    top: -13px;
     text-align: center;
     color: #333;
     font-size: 13px;
@@ -199,43 +201,43 @@ header.tm-header.uk-block::after {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-  }
-  
+}
+
 
 /* Style pour les boutons de quantité */
 .quantity-button.quantity-up::before,
 .quantity-button.quantity-down::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #dc9f96;
-  text-align: center;
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  z-index: 1;
-  color: white;
-  top: 50%;
-  transform: translateY(-50%);
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #dc9f96;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 1;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .quantity-button.quantity-up::before {
-  content: '+';
-  left: 0;
+    content: '+';
+    left: 0;
 }
 
 .quantity-button.quantity-down::before {
-  content: '-';
-  right: 0;
+    content: '-';
+    right: 0;
 }
 
-  /* Style pour la deuxième zone d'entrée (bouton de soumission) */
-  .submit-button {
+/* Style pour la deuxième zone d'entrée (bouton de soumission) */
+.submit-button {
     text-align: center;
-  }
-  
-  .quantity input[type="submit"] {
+}
+
+.quantity input[type="submit"] {
     width: 100px;
     height: 56px;
     border-radius: 5px;
@@ -244,12 +246,12 @@ header.tm-header.uk-block::after {
     border: none;
     margin-top: -20px;
     margin-right: 20px;
-  }
-  
-  .quantity input[type="submit"]:hover {
+}
+
+.quantity input[type="submit"]:hover {
     background-color: #c02e44;
-  }
-  
+}
+
 
 
 /** informations & livraisons**/
@@ -297,10 +299,9 @@ header.tm-header.uk-block::after {
     border-radius: 7px;
 }
 
-.elementor-section.elementor-top-section.elementor-element.elementor-element-23b35c1.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.elementor-container.elementor-column-gap-default > div > div > div.elementor-element.elementor-element-e5c75ec.elementor-absolute.elementor-widget.elementor-widget-image
-{
+.elementor-section.elementor-top-section.elementor-element.elementor-element-23b35c1.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default>div.elementor-container.elementor-column-gap-default>div>div>div.elementor-element.elementor-element-e5c75ec.elementor-absolute.elementor-widget.elementor-widget-image {
     display: block;
-    clear: both;    
+    clear: both;
 }
 
 /**bouton**/
@@ -312,7 +313,12 @@ header.tm-header.uk-block::after {
     text-align: center;
     background-color: #dc9f96;
     color: white;
+    border: none;
 
+}
+#wpcf7-f393-p28-o1>form>p:nth-child(4)>input:hover
+{
+    background-color: #c02e44;
 }
 
 #wpcf7-f393-p28-o1>form>p:nth-child(4) {
@@ -343,4 +349,67 @@ footer a {
 
 footer a:hover {
     color: black;
+}
+
+/**mode responsive**/
+@media screen and (max-width: 420px) {
+    .main {
+        margin: auto;
+    }
+
+    .compteurs {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 50px;
+    }
+
+    .compteurs>div {
+        width: 100%;
+        height: 180px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .compteurs>div:nth-child(1) {
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-12.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+    .compteurs>div:nth-child(2) {
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-13.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .compteurs>div:nth-child(3) {
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-14.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .compteurs>div:nth-child(4) {
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-15.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #wpcf7-f393-p28-o1>form>div.form2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info {
+        border-right: none;
+        padding-right: 0;
+    }
+
 }
