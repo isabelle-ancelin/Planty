@@ -2,447 +2,448 @@
 
 /* Import de la font syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
-    font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
 }
 
-body>div>main {
-    padding-bottom: 0;
+body > div > main {
+  padding-bottom: 0;
 }
-.elementor *, .elementor :after, .elementor :before {
-    box-sizing: border-box;
+.elementor *,
+.elementor :after,
+.elementor :before {
+  box-sizing: border-box;
 }
 
 /** Header **/
 
-body>div.tm-site>main {
-    padding-top: 0;
-    margin-top: 0;
-    padding-bottom: 0;
+body > div.tm-site > main {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
 }
 
-body>div.tm-site>header {
-    padding: 0;
+body > div.tm-site > header {
+  padding: 0;
 }
 
-body>div.tm-site>header>div {
-    max-width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 0;
-    padding-left: 20px;
+body > div.tm-site > header > div {
+  max-width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 20px;
 }
 
-body>div.tm-site>header>div>div {
-    display: flex;
-    align-items: center;
+body > div.tm-site > header > div > div {
+  display: flex;
+  align-items: center;
 }
 
-body>div.tm-site>header>div>div>a {
-    margin-right: 10px;
+body > div.tm-site > header > div > div > a {
+  margin-right: 10px;
 }
 
 div.uk-container.uk-container-center::before,
 div.uk-container.uk-container-center::after {
-    content: none !important;
+  content: none !important;
 }
 
 header.tm-header.uk-block::before,
 header.tm-header.uk-block::after {
-    content: none !important;
+  content: none !important;
 }
 
-#menu-main-menu>li>a {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    background-color: white;
-    font-size: 16px;
-    font-weight: 700;
-    padding-right: 70px;
+#menu-main-menu > li > a {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 70px;
 }
 
-#menu-main-menu>li.command>a {
-    background-color: #dc9f96;
-    color: white;
-    width: 236px;
-    padding-left: 70px;
+#menu-main-menu > li.command > a {
+  background-color: #dc9f96;
+  color: white;
+  width: 236px;
+  padding-left: 70px;
+}
 
+
+#menu-main-menu > li:nth-child(2):hover
+{
+    transform: scale(0.9);
 }
 
 /**Formulaire 1**/
 
-#wpcf7-f155-p26-o1 form
-{
-    position: relative;
- }
+#wpcf7-f155-p26-o1 form {
+  position: relative;
+}
 
-#wpcf7-f155-p26-o1 form:after
-{
-    content: url("http://localhost:81/planty/wp-content/uploads/2023/07/Group-16.png"); 
-    position: absolute; 
-    bottom: 0; 
-    left: -90px; 
-    display: block;
-    z-index: -1;
+#wpcf7-f155-p26-o1 form:after {
+  content: url("http://localhost:81/planty/wp-content/uploads/2023/07/Group-16.png");
+  position: absolute;
+  bottom: 0;
+  left: -90px;
+  display: block;
+  z-index: -1;
 }
 
 #wpcf7-f155-p26-o1 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 #wpcf7-f155-p26-o1 label {
-    font-size: 20px;
-    line-height: 24px;
-    padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 5px;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(2)>label>span>input {
-    height: 71px;
-    width: 383px;
-    border-radius: 7px;
+#wpcf7-f155-p26-o1 > form > p:nth-child(2) > label > span > input {
+  height: 71px;
+  width: 383px;
+  border-radius: 7px;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(3)>label>span>input {
-    height: 71px;
-    width: 383px;
-    border-radius: 7px;
+#wpcf7-f155-p26-o1 > form > p:nth-child(3) > label > span > input {
+  height: 71px;
+  width: 383px;
+  border-radius: 7px;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(4)>label>span>textarea {
-    height: 237px;
-    width: 383px;
-    border-radius: 7px;
-    resize: none;
+#wpcf7-f155-p26-o1 > form > p:nth-child(4) > label > span > textarea {
+  height: 237px;
+  width: 383px;
+  border-radius: 7px;
+  resize: none;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(5) {
-    text-align: center;
+#wpcf7-f155-p26-o1 > form > p:nth-child(5) {
+  text-align: center;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(5)>input {
-    width: 198px;
-    height: 55px;
-    border-radius: 5px;
-    background-color: #e0b9b4;
-    color: white;
-    border: none;
+#wpcf7-f155-p26-o1 > form > p:nth-child(5) > input {
+  width: 198px;
+  height: 55px;
+  border-radius: 5px;
+  background-color: #e0b9b4;
+  color: white;
+  border: none;
 }
 
-#wpcf7-f155-p26-o1>form>p:nth-child(5)>input:hover {
-    background-color: #c02e44;
+#wpcf7-f155-p26-o1 > form > p:nth-child(5) > input:hover {
+  background-color: #c02e44;
 }
 
 .wpcf7-spinner {
-    display: none !important;
+  display: none !important;
 }
 
 /** formulaire 2**/
 
-#wpcf7-f393-p28-o1>form {
-    color: white;
-
+#wpcf7-f393-p28-o1 > form {
+  color: white;
 }
 
 /**compteurs **/
 .compteurs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#wpcf7-f393-p28-o1 > form > div.compteurs > div > p
-{
-    margin: 20px -12px 0 2px;
+#wpcf7-f393-p28-o1 > form > div.compteurs > div > p {
+  margin: 20px -12px 0 2px;
 }
-#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(1)>p {
-    display: flex;
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(1) > p {
+  display: flex;
 }
 
-#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(2)>p {
-    display: flex;
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(2) > p {
+  display: flex;
 }
 
-#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(3)>p {
-    display: flex;
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(3) > p {
+  display: flex;
 }
 
-#wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(4)>p {
-    display: flex;
+#wpcf7-f393-p28-o1 > form > div.compteurs > div:nth-child(4) > p {
+  display: flex;
 }
 
 /* Style pour la première zone d'entrée avec les boutons de quantité */
 .quantity {
-    position: relative;
-    display: flex;
-    align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .quantity input[type="number"] {
-    width: 81px;
-    height: 56px;
-    background-color: white;
-    font-size: 20px;
-    margin-top: -20px;
-    margin-left: 5px;
-    line-height: 1.65;
-    float: left;
-    display: block;
-    padding: 0;
-    padding-left: 10px;
-    border: 1px solid #eee;
-    font-family: "Syne", sans-serif;
-    -moz-appearance: textfield;
-    appearance: textfield;
+  width: 81px;
+  height: 56px;
+  background-color: white;
+  font-size: 20px;
+  margin-top: -20px;
+  margin-left: 5px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid #eee;
+  font-family: "Syne", sans-serif;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .quantity-nav {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    position: relative;
-    height: 56px;
-    width: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  float: left;
+  position: relative;
+  height: 56px;
+  width: 10px;
 }
 
 .quantity-button {
-    position: relative;
-    cursor: pointer;
-    background-color: #dc9f96;
-    border: 1px solid white;
-    width: 30px;
-    height: 30px;
-    top: -20px;
-    text-align: center;
-    color: #fff;
-    font-size: 13px;
-    font-family: 'Syne', sans-serif !important;
-    line-height: 1.8;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    
+  position: relative;
+  cursor: pointer;
+  background-color: #dc9f96;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  top: -20px;
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Syne", sans-serif !important;
+  line-height: 1.8;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
-.quantity-button.quantity-up
-{
-    border-radius: 0 5px 0 0;
-    
+.quantity-button.quantity-up {
+  border-radius: 0 5px 0 0;
 }
-.quantity-button.quantity-down
-{
-    border-radius: 0 0 5px 0;
+.quantity-button.quantity-down {
+  border-radius: 0 0 5px 0;
 }
-
 
 /* Style pour la deuxième zone d'entrée (bouton de soumission) */
 .submit-button {
-    text-align: center;
+  text-align: center;
 }
 
 .quantity input[type="submit"] {
-    width: 100px;
-    height: 56px;
-    border-radius: 5px;
-    background-color: #dc9f96;
-    color: white;
-    border: none;
-    margin-top: -20px;
-    margin-right: 20px;
-    
+  width: 100px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #dc9f96;
+  color: white;
+  border: none;
+  margin-top: -20px;
+  margin-right: 20px;
 }
 
 .quantity input[type="submit"]:hover {
-    background-color: #c02e44;
+  background-color: #c02e44;
 }
-
-
 
 /** informations & livraisons**/
 
 .form2 {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
-    border-top: 1px solid white;
-    margin-top: 50px;
-    padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid white;
+  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .info {
-    border-right: 1px solid white;
-    padding-right: 70px;
+  border-right: 1px solid white;
+  padding-right: 70px;
 }
 
-.info>p:nth-child(1) {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
+.info > p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
-.delivery>p:nth-child(1) {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-
+.delivery > p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
-#wpcf7-f393-p28-o1>form>div.form2>div.info>p>label>span>input {
-    margin-top: 5px;
-    height: 71px;
-    width: 383px;
-    border-radius: 7px;
+#wpcf7-f393-p28-o1 > form > div.form2 > div.info > p > label > span > input {
+  margin-top: 5px;
+  height: 71px;
+  width: 383px;
+  border-radius: 7px;
 }
 
-#wpcf7-f393-p28-o1>form>div.form2>div.delivery>p>label>span>input {
-    margin-top: 5px;
-    height: 71px;
-    width: 383px;
-    border-radius: 7px;
+#wpcf7-f393-p28-o1
+  > form
+  > div.form2
+  > div.delivery
+  > p
+  > label
+  > span
+  > input {
+  margin-top: 5px;
+  height: 71px;
+  width: 383px;
+  border-radius: 7px;
 }
 
-.elementor-section.elementor-top-section.elementor-element.elementor-element-23b35c1.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default>div.elementor-container.elementor-column-gap-default>div>div>div.elementor-element.elementor-element-e5c75ec.elementor-absolute.elementor-widget.elementor-widget-image {
-    display: block;
-    clear: both;
+.elementor-section.elementor-top-section.elementor-element.elementor-element-23b35c1.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default
+  > div.elementor-container.elementor-column-gap-default
+  > div
+  > div
+  > div.elementor-element.elementor-element-e5c75ec.elementor-absolute.elementor-widget.elementor-widget-image {
+  display: block;
+  clear: both;
 }
 
 /**bouton**/
 
-#wpcf7-f393-p28-o1>form>p:nth-child(4)>input {
-    width: 198px;
-    height: 55px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #dc9f96;
-    color: white;
-    border: none;
-
+#wpcf7-f393-p28-o1 > form > p:nth-child(4) > input {
+  width: 198px;
+  height: 55px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #dc9f96;
+  color: white;
+  border: none;
 }
-#wpcf7-f393-p28-o1>form>p:nth-child(4)>input:hover
-{
-    background-color: #c02e44;
+#wpcf7-f393-p28-o1 > form > p:nth-child(4) > input:hover {
+  background-color: #c02e44;
 }
 
-#wpcf7-f393-p28-o1>form>p:nth-child(4) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+#wpcf7-f393-p28-o1 > form > p:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 /**footer**/
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    width: 100%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
 }
 
 footer a {
-    color: black;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none !important;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none !important;
 }
 
 footer a:hover {
-    color: black;
+  color: black;
 }
 
 /**mode responsive**/
-@media screen and (max-width: 320px ) 
- {
-    .main {
-        margin: auto;
-    }
+@media screen and (max-width: 320px) {
+  .main {
+    margin: auto;
+  }
+ 
+
+  #wpcf7-f155-p26-o1 form:after {
+    display: none;
+  }
+
+  .compteurs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px;
+  }
+
+  .compteurs > div {
+    width: auto;
+    margin-top: 25px;
+    height: 180px;
+  }
+  .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+
+  .quantity-button {
+    top: -56px;
+    right: -85px;
+  }
+
+  .compteurs > div:nth-child(1) {
+    background: url("http://localhost:81/planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png")
+      center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 100px;
     
-    .compteurs {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin: 50px;
-        
-    }
-    
-    .compteurs>div {
-        width: auto;
-        margin-top: 25px;
-        height: 180px; 
-        
-    }
-    .quantity
-    {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-top: 0;
-    }
-   
-    .quantity-button
-    {
-        top: -56px;
-        right: -85px;
-    }
-      
-      
-      
-    .compteurs>div:nth-child(1) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png') center/cover no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-top: 100px;
-       
-    }
+  }
 
-    .compteurs>div:nth-child(2) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png') center/cover no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .compteurs > div:nth-child(2) {
+    background: url("http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png")
+      center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .compteurs>div:nth-child(3) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png') center/cover no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .compteurs > div:nth-child(3) {
+    background: url("http://localhost:81/planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png")
+      center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    .compteurs>div:nth-child(4) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png') center/cover no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
+  .compteurs > div:nth-child(4) {
+    background: url("http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png")
+      center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
 
-    #wpcf7-f393-p28-o1>form>div.form2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  #wpcf7-f393-p28-o1 > form > div.form2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .info {
-        border-right: none;
-        padding-right: 0;
-    }
-    
-    #wpcf7-f155-p26-o1
-    {
-        display: block;
-    }
+  .info {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  #wpcf7-f155-p26-o1 {
+    display: block;
+  }
 }
