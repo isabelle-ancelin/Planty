@@ -8,7 +8,9 @@ body * {
 body>div>main {
     padding-bottom: 0;
 }
-
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
 
 /** Header **/
 
@@ -71,9 +73,26 @@ header.tm-header.uk-block::after {
 
 /**Formulaire 1**/
 
+#wpcf7-f155-p26-o1 form
+{
+    position: relative;
+ }
+
+#wpcf7-f155-p26-o1 form:after
+{
+    content: url("http://localhost:81/planty/wp-content/uploads/2023/07/Group-16.png"); 
+    position: absolute; 
+    bottom: 0; 
+    left: -90px; 
+    display: block;
+    z-index: -1;
+}
+
 #wpcf7-f155-p26-o1 {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 #wpcf7-f155-p26-o1 label {
@@ -134,8 +153,12 @@ header.tm-header.uk-block::after {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
-
+#wpcf7-f393-p28-o1 > form > div.compteurs > div > p
+{
+    margin: 20px -12px 0 2px;
+}
 #wpcf7-f393-p28-o1>form>div.compteurs>div:nth-child(1)>p {
     display: flex;
 }
@@ -162,10 +185,10 @@ header.tm-header.uk-block::after {
 .quantity input[type="number"] {
     width: 81px;
     height: 56px;
-    background-color: #e0b9b4;
+    background-color: white;
+    font-size: 20px;
     margin-top: -20px;
     margin-left: 5px;
-
     line-height: 1.65;
     float: left;
     display: block;
@@ -178,22 +201,28 @@ header.tm-header.uk-block::after {
 }
 
 .quantity-nav {
+    display: flex;
+    flex-direction: column;
     float: left;
     position: relative;
-    height: 42px;
+    height: 56px;
+    width: 10px;
+    
 }
 
 .quantity-button {
     position: relative;
     cursor: pointer;
-    border-left: 1px solid #eee;
-    width: 20px;
-    top: -13px;
+    background-color: #dc9f96;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    top: -20px;
     text-align: center;
-    color: #333;
+    color: #fff;
     font-size: 13px;
     font-family: 'Syne', sans-serif !important;
-    line-height: 1.7;
+    line-height: 1.8;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
     -webkit-user-select: none;
@@ -201,36 +230,18 @@ header.tm-header.uk-block::after {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    
+}
+.quantity-button.quantity-up
+{
+    border-radius: 0 5px 0 0;
+    
+}
+.quantity-button.quantity-down
+{
+    border-radius: 0 0 5px 0;
 }
 
-
-/* Style pour les boutons de quantité */
-.quantity-button.quantity-up::before,
-.quantity-button.quantity-down::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #dc9f96;
-    text-align: center;
-    line-height: 20px;
-    font-weight: bold;
-    font-size: 14px;
-    z-index: 1;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.quantity-button.quantity-up::before {
-    content: '+';
-    left: 0;
-}
-
-.quantity-button.quantity-down::before {
-    content: '-';
-    right: 0;
-}
 
 /* Style pour la deuxième zone d'entrée (bouton de soumission) */
 .submit-button {
@@ -241,11 +252,12 @@ header.tm-header.uk-block::after {
     width: 100px;
     height: 56px;
     border-radius: 5px;
-    background-color: #e0b9b4;
+    background-color: #dc9f96;
     color: white;
     border: none;
     margin-top: -20px;
     margin-right: 20px;
+    
 }
 
 .quantity input[type="submit"]:hover {
@@ -352,50 +364,67 @@ footer a:hover {
 }
 
 /**mode responsive**/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 320px ) 
+ {
     .main {
         margin: auto;
     }
-
+    
     .compteurs {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         margin: 50px;
+        
     }
-
+    
     .compteurs>div {
-        width: 100%;
-        height: 180px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: flex-end;
+        width: auto;
+        margin-top: 25px;
+        height: 180px; 
+        
     }
-
-    .compteurs>div:nth-child(1) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-12.png') center/cover no-repeat;
+    .quantity
+    {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-
+        margin-top: 0;
+    }
+   
+    .quantity-button
+    {
+        top: -56px;
+        right: -85px;
+    }
+      
+      
+      
+    .compteurs>div:nth-child(1) {
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 100px;
+       
     }
 
     .compteurs>div:nth-child(2) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-13.png') center/cover no-repeat;
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png') center/cover no-repeat;
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
 
     .compteurs>div:nth-child(3) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-14.png') center/cover no-repeat;
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png') center/cover no-repeat;
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
 
     .compteurs>div:nth-child(4) {
-        background: url('http://localhost:81/planty/wp-content/uploads/2023/07/Group-15.png') center/cover no-repeat;
+        background: url('http://localhost:81/planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png') center/cover no-repeat;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -411,5 +440,9 @@ footer a:hover {
         border-right: none;
         padding-right: 0;
     }
-
+    
+    #wpcf7-f155-p26-o1
+    {
+        display: block;
+    }
 }
