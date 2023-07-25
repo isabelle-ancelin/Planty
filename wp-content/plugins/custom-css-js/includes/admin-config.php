@@ -145,7 +145,7 @@ class CustomCSSandJS_AdminConfig {
         $active[$tab] = 'nav-tab-active';
 
         ?>
-        <style type="text/css">
+        <style>
             .custom-css-js_page_custom-css-js-config h1 { margin-bottom: 40px; }
             .form-table { margin-left: 2%; width: 98%;}
             .form-table th { width: 500px; } 

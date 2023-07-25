@@ -80,7 +80,7 @@ function beans_header_image() {
 	}
 
 	?>
-	<style type="text/css">
+	<style>
 		.tm-header {
 			background-image: url(<?php echo esc_url( $header_image ); ?>);
 			background-position: 50% 50%;

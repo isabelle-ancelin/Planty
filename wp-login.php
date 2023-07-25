@@ -170,7 +170,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 		$classes[] = 'interim-login';
 
 		?>
-		<style type="text/css">html{background-color: transparent;}</style>
+		<style>html{background-color: transparent;}</style>
 		<?php
 
 		if ( 'success' === $interim_login ) {
@@ -193,7 +193,7 @@ function login_header( $title = 'Log In', $message = '', $wp_error = null ) {
 	?>
 	</head>
 	<body class="login no-js <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
-	<script type="text/javascript">
+	<script>
 		document.body.className = document.body.className.replace('no-js','js');
 	</script>
 	<?php
@@ -384,7 +384,7 @@ function login_footer( $input_id = '' ) {
 
 	if ( ! empty( $input_id ) ) {
 		?>
-		<script type="text/javascript">
+		<script>
 		try{document.getElementById('<?php echo $input_id; ?>').focus();}catch(e){}
 		if(typeof wpOnload==='function')wpOnload();
 		</script>
@@ -412,7 +412,7 @@ function login_footer( $input_id = '' ) {
  */
 function wp_shake_js() {
 	?>
-	<script type="text/javascript">
+	<script>
 	document.querySelector('form').classList.add('shake');
 	</script>
 	<?php
@@ -1291,7 +1291,7 @@ switch ( $action ) {
 
 				if ( $customize_login ) {
 					?>
-					<script type="text/javascript">setTimeout( function(){ new wp.customize.Messenger({ url: '<?php echo wp_customize_url(); ?>', channel: 'login' }).send('login') }, 1000 );</script>
+					<script>setTimeout( function(){ new wp.customize.Messenger({ url: '<?php echo wp_customize_url(); ?>', channel: 'login' }).send('login') }, 1000 );</script>
 					<?php
 				}
 
@@ -1539,14 +1539,14 @@ switch ( $action ) {
 		$login_script .= "if ( typeof wpOnload === 'function' ) { wpOnload() }";
 
 		?>
-		<script type="text/javascript">
+		<script>
 			<?php echo $login_script; ?>
 		</script>
 		<?php
 
 		if ( $interim_login ) {
 			?>
-			<script type="text/javascript">
+			<script>
 			( function() {
 				try {
 					var i, links = document.getElementsByTagName( 'a' );

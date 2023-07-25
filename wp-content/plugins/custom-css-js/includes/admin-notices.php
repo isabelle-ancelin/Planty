@@ -162,7 +162,7 @@ class CustomCSSandJS_Notices {
         $p = $this->prefix;
 
             ?>
-            <style type="text/css">
+            <style>
                 .<?php echo $p; ?>_note{ color: #bc1117; }
                 #<?php echo $p; ?>_notice { display: block; padding:  }
                 #<?php echo $p; ?>_notice b { color: #bc1117; }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file's content is located in /lib/templates/structure/header.php and should
  * only be overwritten via your child theme.
@@ -11,5 +12,5 @@
  * @package Beans\Framework
  */
 
-beans_load_default_template( __FILE__ );
-
+beans_load_default_template(__FILE__);
+?>

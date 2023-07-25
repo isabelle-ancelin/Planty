@@ -10,7 +10,7 @@
 
 ?>
 
-<script type="text/javascript">
+<script>
 	(function ($) {
 		$(document).ready(function () {
 			$('#page_template').data('beans-pre', $('#page_template').val());

@@ -1,5 +1,5 @@
 <!-- start Simple Custom CSS and JS -->
-<script type="text/javascript">
+<script>
  
 jQuery(document).ready(function($) {
   $('.quantity input[type="number"]').each(function() {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file's content is located in /lib/templates/structure/footer.php and should
  * only be overwritten via your child theme.
@@ -15,10 +16,9 @@
 
 <footer id="site-footer" class="header-footer-group">
     <a href="http://localhost:81/planty/mentions-legales/">Mentions Légales</a>
-</footer><!-- #site-footer -->
+</footer>
 
 <?php wp_footer(); ?>
 
 </body>
-
 </html>

@@ -4,8 +4,7 @@ function theme_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
-}
-;
+};
 // Remove the breadcrumb.
 add_filter('beans_pre_load_fragment_breadcrumb', '__return_true');
 
@@ -34,4 +33,12 @@ function add_admin_menu_link($items, $args)
 
 // Ajouter le filtre pour appliquer la fonction aux éléments du menu
 add_filter('wp_nav_menu_items', 'add_admin_menu_link', 10, 2);
+
+// résoudre problème script et style
+add_action(
+    'after_setup_theme',
+    function() {
+        add_theme_support( 'html5', [ 'script', 'style' ] );
+    }
+);
 

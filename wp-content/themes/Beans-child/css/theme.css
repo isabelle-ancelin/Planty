@@ -1,4 +1,4 @@
-@import url('href="https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 
 /* Import de la font syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body * {
@@ -8,6 +8,7 @@ body * {
 body > div > main {
   padding-bottom: 0;
 }
+
 .elementor *,
 .elementor :after,
 .elementor :before {
@@ -71,11 +72,9 @@ header.tm-header.uk-block::after {
   width: 236px;
   padding-left: 70px;
 }
-
-
-#menu-main-menu > li:nth-child(2):hover
-{
-    transform: scale(0.9);
+ 
+#menu-main-menu > li:nth-child(2):hover {
+  transform: scale(0.9);
 }
 
 /**Formulaire 1**/
@@ -153,6 +152,7 @@ header.tm-header.uk-block::after {
 }
 
 /**compteurs **/
+
 .compteurs {
   display: flex;
   justify-content: center;
@@ -178,6 +178,7 @@ header.tm-header.uk-block::after {
 }
 
 /* Style pour la première zone d'entrée avec les boutons de quantité */
+
 .quantity {
   position: relative;
   display: flex;
@@ -240,6 +241,7 @@ header.tm-header.uk-block::after {
 }
 
 /* Style pour la deuxième zone d'entrée (bouton de soumission) */
+
 .submit-button {
   text-align: center;
 }
@@ -368,7 +370,6 @@ footer a:hover {
   .main {
     margin: auto;
   }
- 
 
   #wpcf7-f155-p26-o1 form:after {
     display: none;
@@ -405,7 +406,6 @@ footer a:hover {
     justify-content: center;
     align-items: flex-end;
     margin-top: 100px;
-    
   }
 
   .compteurs > div:nth-child(2) {

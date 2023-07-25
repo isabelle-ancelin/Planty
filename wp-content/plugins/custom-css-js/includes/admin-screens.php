@@ -569,7 +569,7 @@ class CustomCSSandJS_Admin {
 	 */
 	function current_screen_edit() {
 		?>
-		<script type="text/javascript">
+		<script>
 			 /* <![CDATA[ */
 			jQuery(window).ready(function($){
 				var h1 = '<?php _e( 'Custom Code', 'custom-css-js' ); ?> ';
@@ -619,12 +619,12 @@ class CustomCSSandJS_Admin {
 		}
 
 		?>
-		<style type="text/css">
+		<style>
 			#post-body-content, .edit-form-section { position: static !important; }
 			#ed_toolbar { display: none; }
 			#postdivrich { display: none; }
 		</style>
-		<script type="text/javascript">
+		<script>
 			 /* <![CDATA[ */
 			jQuery(window).ready(function($){
 				$("#wpbody-content h1").html('<?php echo $title; ?>');
@@ -753,7 +753,7 @@ End of comment */ ',
 					) . PHP_EOL . PHP_EOL;
 				}
 				$code_mirror_mode   = 'text/javascript';
-				$code_mirror_before = '<script type="text/javascript">';
+				$code_mirror_before = '<script>';
 				$code_mirror_after  = '</script>';
 				break;
 			case 'html':
@@ -803,7 +803,7 @@ End of comment */ ',
 
 				}
 				$code_mirror_mode   = 'text/css';
-				$code_mirror_before = '<style type="text/css">';
+				$code_mirror_before = '<style>';
 				$code_mirror_after  = '</style>';
 
 		}
@@ -1221,12 +1221,12 @@ End of comment */ ',
 			$before = '<!-- start Simple Custom CSS and JS -->' . PHP_EOL;
 			$after  = '<!-- end Simple Custom CSS and JS -->' . PHP_EOL;
 			if ( $options['language'] == 'css' ) {
-				$before .= '<style type="text/css">' . PHP_EOL;
+				$before .= '<style>' . PHP_EOL;
 				$after   = '</style>' . PHP_EOL . $after;
 			}
 			if ( $options['language'] == 'js' ) {
 				if ( ! preg_match( '/<script\b[^>]*>([\s\S]*?)<\/script>/im', $_POST['content'] ) ) {
-					$before .= '<script type="text/javascript">' . PHP_EOL;
+					$before .= '<script>' . PHP_EOL;
 					$after   = '</script>' . PHP_EOL . $after;
 				} else {
 					// the content has a <script> tag, then remove the comments so they don't show up on the frontend

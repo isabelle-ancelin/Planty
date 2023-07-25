@@ -70,7 +70,7 @@ beans_add_smart_action( 'wp_footer', 'beans_replace_nojs_class' );
  * @return void
  */
 function beans_replace_nojs_class() {
-	?><script type="text/javascript">
+	?><script>
 		(function() {
 			document.body.className = document.body.className.replace('no-js','js');
 		}());

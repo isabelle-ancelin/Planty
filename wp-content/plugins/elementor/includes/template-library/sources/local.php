@@ -1337,7 +1337,7 @@ class Source_Local extends Source_Base {
 		] );
 		$inline_style .= $args['additional_inline_style'];
 		?>
-		<style type="text/css"><?php Utils::print_unescaped_internal_string( $inline_style ); ?></style>
+		<style><?php Utils::print_unescaped_internal_string( $inline_style ); ?></style>
 		<div class="elementor-template_library-blank_state">
 			<?php $this->print_blank_state_template( $current_type_label, $args['href'], $args['description'] ); ?>
 		</div>
