@@ -36,7 +36,5 @@ jQuery(document).ready(function($) {
 
 
 
-
-
 </script>
 <!-- end Simple Custom CSS and JS -->
